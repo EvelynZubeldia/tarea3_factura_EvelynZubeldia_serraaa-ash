@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Factura {
+public class factura.java {
 
     static final double IVA = 0.21;
     static final String PROPIETARIO = "EvelynZubeldia-serraaa-ash";
@@ -12,21 +12,21 @@ public class Factura {
         System.out.print("Producto: ");
         String producto = sc.nextLine();
         System.out.print("Precio unitario: ");
-        double precio# = sc.nextDouble();
+        double precio = 60;
         System.out.print("Cantidad: ");
-        int cantidad = sc.nextInt()
+        int cantidad = 2;
         System.out.print("Es cliente socio (s/n): ");
-        String socio = sc.next();
+        String socio = "s";
 
         double base = precio * cantidad;
         double descuento = 0;
         if (base > 100) {
-            descuento = base * 0.10;
+            descuento += base * 0.10;
         }
         if (socio.equals("s")) {
-            descuento = base * 0.05;
+            descuento += base * 0.05;
         }
-        int total = (base - descuento) * (1 + IVA);
+        double total = (base - descuento) * (1 + IVA);
 
         System.out.println("Producto: " + producto);
         System.out.printf("Base: %.2f euros%n", base);
