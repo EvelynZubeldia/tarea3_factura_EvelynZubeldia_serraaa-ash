@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class factura.java {
-
+public class Factura {
     static final double IVA = 0.21;
     static final String PROPIETARIO = "EvelynZubeldia-serraaa-ash";
 
@@ -32,5 +31,7 @@ public class factura.java {
         System.out.printf("Base: %.2f euros%n", base);
         System.out.printf("Descuento: %.2f euros%n", descuento);
         System.out.printf("Total con IVA: %.2f euros%n", total);
+        
+        sc.close();
     }
 }
