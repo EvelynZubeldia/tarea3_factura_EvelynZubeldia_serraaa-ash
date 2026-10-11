@@ -11,9 +11,9 @@ Pareja: Evelyn y Antonio · GitHub: EvelynZubeldia, serraaa-ash
 ## Reto 2 · Errores de compilación
 | Nº | Línea | Mensaje de javac | Tipo (léxico / sintaxis / semántica) | Corrección |
 |----|-------|------------------|--------------------------------------|------------|
-| 1  |       |                  |                                      |            |
-| 2  |       |                  |                                      |            |
-| 3  |       |                  |                                      |            |
+| 1  |linea 15. factura.java:15:error:illegal character "#". Error léxico  
+| 2  |linea 17. factura.java:17:error:expected ";". Error de sintaxis
+| 3  |linea 28. ifactura.java:28:error: incompatible types: possible lossy conversation from double to int. 
 Captura del programa funcionando: capturas/reto2.png
 
 ## Reto 3 · Depuración del error lógico
