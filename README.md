@@ -19,11 +19,13 @@ Captura del programa funcionando: capturas/reto2.png
 ## Reto 3 · Depuración del error lógico
 | Variable | Valor esperado | Valor real |
 |----------|----------------|------------|
-| descuento |               |            |
-| total     |               |            |
-- Línea del error y explicación:
-- Corrección:
-- Mi propia prueba (producto, precio, cantidad, socio → total):
+| descuento | 18,00 € | 6,00 € |
+| total | 123,42 € | 137,94 € |
+
+- **Línea del error y explicación:** la línea 26, `descuento = base * 0.05;`. Con el `=` el 5 % del socio machaca el 10 % que ya estaba calculado en vez de sumarse, y por eso el descuento se queda en 6 €.
+- **Corrección:** cambiar el `=` por `+=`, que queda `descuento += base * 0.05;`. Así se suman los dos descuentos y con 60, 2 y s da 123,42 €.
+- **Mi propia prueba:** auriculares, precio 25, cantidad 4, socio s → total 114,95 €. Lo he elegido porque la base sale justo 100 € y, como no supera 100, no se aplica el 10 %, solo el 5 % del socio: (100 − 5) × 1,21 = 114,95 €.
+
 Captura del depurador: capturas/reto3.png
 
 ## Reto 4 · Reutilización
