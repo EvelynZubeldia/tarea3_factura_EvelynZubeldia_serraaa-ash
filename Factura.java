@@ -11,11 +11,11 @@ public class Factura {
         System.out.print("Producto: ");
         String producto = sc.nextLine();
         System.out.print("Precio unitario: ");
-        double precio = 60;
+        double precio = sc.nextDouble();
         System.out.print("Cantidad: ");
-        int cantidad = 2;
+        int cantidad = sc.nextInt();
         System.out.print("Es cliente socio (s/n): ");
-        String socio = "s";
+        String socio = sc.next();
 
         double base = precio * cantidad;
         double descuento = 0;
@@ -31,7 +31,7 @@ public class Factura {
         System.out.printf("Base: %.2f euros%n", base);
         System.out.printf("Descuento: %.2f euros%n", descuento);
         System.out.printf("Total con IVA: %.2f euros%n", total);
-        
+
         sc.close();
     }
 }
