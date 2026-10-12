@@ -38,3 +38,4 @@ El main queda más corto y se entiende mejor, porque cada cálculo tiene su nomb
 ## Reto 5 · ¿Qué lenguaje elegirías?
 - Caso A (web de la tienda): usaría un lenguaje interpretado, como JavaScript. Es portable, porque funciona en cualquier navegador sin instalar nada, y es el adecuado para este tipo de proyecto, porque es una web.
 - Caso B (propuesta en ensamblador): no lo haría, seguiría con Java. El ensamblador no es portable, porque depende del procesador y no funcionaría en cualquier ordenador, y el coste de desarrollo sería mucho mayor para una calculadora que ya va rápida.
+Palabra del día: meta
