@@ -1,3 +1,4 @@
+// Palabra del día: meta
 import java.util.Scanner;
 
 public class Factura {
