@@ -30,7 +30,10 @@ Captura del depurador: capturas/reto3.png
 
 ## Reto 4 · Reutilización
 - Métodos creados y para qué sirve cada uno:
+- `calcularDescuento(double base, boolean socio)`: le paso la base y si es socio, y me devuelve el descuento total (el 10 % si la base pasa de 100 € y un 5 % más si es socio).
+- `aplicarIVA(double importe)`: le paso un importe y me lo devuelve con el 21 % de IVA sumado. En el main ahora solo pido los datos y llamo a los métodos. Con 60, 2 y s sigue dando 123,42 €.
 - ¿Qué ventaja tiene frente al código anterior?
+El main queda más corto y se entiende mejor, porque cada cálculo tiene su nombre. Si cambia una regla (por ejemplo el IVA o el descuento de socio) solo hay que cambiarla en un sitio, y los métodos se pueden reutilizar en otras partes del programa sin copiar el código.
 
 ## Reto 5 · ¿Qué lenguaje elegirías?
 - Caso A (web de la tienda):
